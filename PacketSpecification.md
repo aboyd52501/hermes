@@ -80,7 +80,7 @@ while (true) {
 | Modulus Length  | VarInt    | Length of the Modulus byte array  |
 | Modulus         | ByteArray | RSA Modulus as a byte array       |
 | Exponent Length | VarInt    | Length of the Exponent byte array |
-| Modulus         | ByteArray | RSA Exponent as a byte array      |
+| Exponent        | ByteArray | RSA Exponent as a byte array      |
   
 #### `0x05` AES Key
 | Field      | Type      | Notes                            |
