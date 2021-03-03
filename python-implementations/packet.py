@@ -83,11 +83,11 @@ class Packet:
         byte_count = 1
         while 256**byte_count <= integer:
             byte_count += 1
-        return integer.to_bytes(byte_count, 'big')
+        return integer.to_bytes(byte_count, 'little')
 
     @staticmethod
     def decode_number(data):
-        return int.from_bytes(data, 'big')
+        return int.from_bytes(data, 'little')
     
     @staticmethod
     def from_string(string):
